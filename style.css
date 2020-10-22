@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+header{
+    background-color: skyblue;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right img{
+    width: 100px;
+    height: 100px;
+}
+
+.header-left{
+    width: 1061px;
+    height: 100px;
+
+}
+ul{
+    width: 1061px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+
+.header-left a{
+    color: white;
+    text-decoration: none;
+}
+
+.welcome{
+    height: 100vh;
+    background-image: url(img//sheep.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
