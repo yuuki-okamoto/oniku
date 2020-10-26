@@ -1,17 +1,57 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     font-size: 100%;
+    background-color: peru;
 }
 
 header{
-    background-color: skyblue;
+    background-color: peru;
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .header-right img{
@@ -20,12 +60,12 @@ header{
 }
 
 .header-left{
-    width: 1061px;
+    width: 80%;
     height: 100px;
 
 }
 ul{
-    width: 1061px;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -33,14 +73,215 @@ ul{
     align-items: center;
 }
 
+.nav li{
+    font-size: 25px;
+}
+
 .header-left a{
     color: white;
     text-decoration: none;
 }
 
+.link{
+    padding: 10px;
+}
+
+.link:hover{
+   border: 2px solid white;
+   animation-name: ani;
+   animation-iteration-count: infinite;
+   animation-duration: 1.5s;
+
+}
+
+@keyframes ani{
+    0%{
+        color: white;
+    }
+    50%{
+        color: peru;
+    }
+}
+
+
+
+
 .welcome{
     height: 100vh;
-    background-image: url(img//sheep.jpg);
+    background-image: url(img//sabaku.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#room, #food, #access{
+    padding-top: 60px;
+}
+
+#room h1, #food h1, #access h1{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+.room, .food {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+
+.room  div img{
+    width: 600px;
+    height: 400px;
+    padding: 30px 15px;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+.food  div img{
+    width: 600px;
+    height: 400px;
+    padding: 30px 15px;
+}
+
+
+.access{
+    display: flex;
+    justify-content:center ;
+    padding-top: 30px;
+
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+.access-text p{
+    padding-left:150px;
+    text-align: left;
+    color:white;
+    font-size: 20px;
+}
+
+footer{
+    border-top: 1px solid black;
+    height: 30px;
+    width: 100%;
+    display: flex;   
+    margin-top: 30px;
+}
+
+.header-left{
+    height: 30px;
+    margin:0px;
+    width: 100%;
+
+}
+
+.header-left p{
+    text-align: center;
+    height: 100%;
+    color: white;;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+   body{
+       width: 480px;
+   }
+
+    header{
+    position: fixed;
+    width: 100%;
+     top: 0;
+    z-index: 10000;
+    }
+    
+    .header-right img{
+    display: none;
+    }
+
+    header, main, footer{
+        width: 100%;
+
+    }
+    .nav{
+       width: 480px; 
+    }
+    .nav li a {
+        width: 480px;
+        font-size: 10px;
+    }
+
+    .welcome{
+        height: 200px;
+        width: 480px;
+        background-image: url(img//sabaku.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #room h1, #food h1, #access h1{
+        font-size: 30px;
+    }
+
+    .room, .food{
+        display: flex;
+        flex-flow: column;
+        
+    }
+
+    .room  div img,
+    .food   div img{
+        width: 480px;
+        height: 400px;
+        padding: 10px 0;
+
+        
+    }
+    
+    .access{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .access-text{
+        width: 480px;
+        height: 230px;
+        padding: 0;
+        text-align: center;
+
+    }
+    .access-text p{
+        font-size: 5px;
+        padding: 0;
+        margin-left:3px;
+        width: 200px;
+        height: 480px;
+        text-align: center;
+    }
+
+
+    .map{
+        width: 280px;
+        height: 280px;
+        
+    }
+
+    footer{
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+
+
+
+    }

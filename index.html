@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   
 </head>
 <body>
@@ -14,14 +16,12 @@
         <img src="img//logo.png" alt="">
       </div>
       <div class="header-left">
-      <ul>
-        <li><a href="">ホーム</a></li>
-        <li><a href="">客室</a></li>
-        <li><a href="">館内施設</a></li>
-        <li><a href="">料理</a></li>
-        <li><a href="">温泉</a></li>
-        <li><a href="">宿泊プラン</a></li>
-        <li><a href="">アクセス</a></li>
+      <ul class="nav">
+        <li><a class="link" href="#welcome">ホーム</a></li>
+        <li><a class="link" href="#room">客室</a></li>
+        <li><a class="link" href="#food">料理</a></li>
+        <li><a class="link" href="plan.html">宿泊プラン</a></li>
+        <li><a class="link" href="#access">アクセス</a></li>
       </ul>
     </div>
 
@@ -31,7 +31,55 @@
         <section class="welcome">
 
         </section>
+
+        <section id="room">
+      
+          <h1>ROOM</h1>
+          <div class="room">
+          <div><img class="img" src="img/room1.jpeg" alt="">
+            <p>スタンダードルーム</p></div>
+          <div><img class="img" src="img/sweet.jpg" alt=""><p>スイートルーム</p></div>
+          <div><img class="img" src="img/washitu.jpg" alt=""><p>和室</p></div>
+          </div>
+
+        </section>
+    
+
+        <section id="food">
+
+          <h1>FOOD</h1>
+          <div class="food">
+          <div><img class="img" src="img/food1.jpg" alt=""></div>
+          <div><img class="img" src="img/food2.jpeg" alt=""></div>
+          </div>
+
+
+        </section>
+
         
+        <section id="access">
+          <h1>ACCESS</h1>
+          <div class="access">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492.935697525731!2d134.21711867449534!3d35.54214607086753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35558f38273614bd%3A0xd76eab646cb0f519!2sTottori%20Sand%20Dunes!5e0!3m2!1sja!2sjp!4v1603373686943!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="access-text"><p><br>〒689-0105<br>　 鳥取県鳥取市福部町湯山2164-971<br>
+            <br><span class="material-icons">
+              directions_car
+              </span>お車でお越しの方<br>
+            　鳥取自動車道「鳥取IC」より約20分<br>
+            <br>
+            <span class="material-icons">
+              directions_bus
+              </span>
+            バスでお越しの方（鳥取駅から約20分）<br>
+            　鳥取駅バスターミナルより、<br>　「岩美・岩井線」または「砂丘線」にご乗車ください。<br>
+
+
+
+          </p></div>
+
+        </div>
+        </section>
+
 
 
       </main>
@@ -39,8 +87,10 @@
 
 
       <footer>
-        <div class="footer-logo"><img src="" alt=""></div>
-
+        <div class="header-left">
+          <p>©Tottori Sand Dunes Hotel</p>
+          </div>
+          
         
 
       </footer>
